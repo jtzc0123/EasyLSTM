@@ -1,10 +1,8 @@
-# LSTM_PittsRoutine
-Play with LSTM on Pittsburgh's driving data
+# EasyLSTM
+An ***LSTM Library*** build on Keras and Tensorflow for Adepter Use of Sequential Sensor Data
 
----
-For inner use of *Ubicomp, HCII, CMU,* with important information omitted.
-
-***Aug/24/2016 Updated:*** Now you are welcome to make use of this lib for your own dataset!
+## Goal
+>Why is it people think deep learning as something grandious and being frightened to try something **simple and beautiful**?
 
 ## Preliminaries
 Tested on OS X EI Capitan 10.11.5:
@@ -13,7 +11,6 @@ Tested on OS X EI Capitan 10.11.5:
 + tensorflow 0.9.0
 + keras 1.0.5
 + scikit-learn 0.17.1
-+ googlemaps 2.4.4 (see your model being alive!)
 
 ## Pipeline
 ![](http://epiwork.hcii.cs.cmu.edu/~hanggao/pics/pipeline_lstm_lib.png)
@@ -228,6 +225,10 @@ def build_model(use_y_flag=True, n_dimension=24, n_labels=12, n_seq=5,
 def run_network(savename, model=None, data=None, epochs=100, \
                 usage_ratio=1, tb_on=False, autosave=False)
 ```
+
+## Credit
+- 08/26/2016 **Ubicomp Lab**, HCII, CS, CMU.
+
 
 ## Contact
 Any questions & suggestions are welcomed. Also, you are encouraged to folk this repo to build your own tool kit.
