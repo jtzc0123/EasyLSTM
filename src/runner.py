@@ -3,6 +3,23 @@ import lstm, test, pretraining
 
 ######################################################################
 # Train the initial data, then test it with multiple evaluators.
+# --------------------------------------------------------------------
+# input:
+#   (str) filename, reading file from the filename. Relative path is appreciated.
+#   (str) savename, the filename of data in CSV format. Your divided sets would
+#       be saved as "train_$(savename).csv" and "test_$(savename).csv" in "data/input"
+#       directory, which is necessary for external testingb before the training.
+#   (int) n_seq, the size of your sequence.    
+#   (int) n_labels, the number of your labels.
+#   (int) n_dimension, the dimension of features, not including y_feature.
+#   (list) n_hidden, the topology of your LSTM network.
+#   (float) dropout, the dropout rate to control the over-fitting issue.
+#       see https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf for more informations
+#   (int) epochs, training epochs.
+#   (bool) tb_on, use Tensorboard to record training curve or not. Save at "logs/".
+#       see also, https://www.tensorflow.org/versions/r0.10/how_tos/summaries_and_tensorboard/index.html
+#   (bool) autosave, auto save the model or not,
+#       if False, you would be asked for the save option once training is over.
 def train_initial(filename, savename, n_seq, n_labels, n_dimension,
                   n_hidden, dropout, epochs, tb_on, autosave):
 
