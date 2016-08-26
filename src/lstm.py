@@ -17,7 +17,7 @@ from test import read_data
 #   (bool) use_y_flag, indicate using previous y as a feature or not.
 #   (int) n_dimension, the dimension of features, not including y_feature.
 #   (int) n_labels, the number of your labels.
-#   (int) n_seq, the size of your sequence,
+#   (int) n_seq, the size of your sequence.
 #   (list) n_hidden, the list of your LSTM topology, should be tuned for the best.
 #   (float) dropout, the dropout rate to control the over-fitting issue.
 #       see https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf for more informations
