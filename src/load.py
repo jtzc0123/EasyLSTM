@@ -21,6 +21,7 @@ filename = '../data/useful/pitt_intersection_speed'
 #   (tuple) (X, y),
 #       X - (n_sample x n_dimension) array,
 #       y - (n_sample x 1) array, raw label information
+#
 def csv_read(filename=filename):
 
     print 'Loading raw data from %s..' % filename
@@ -43,7 +44,7 @@ def csv_read(filename=filename):
 #       by user's input of "n_labels". Or, you wanna do regression.
 #   (int) n_seq, the length of LSTM's `window`. You can imagine the model would memorize
 #       the pattern exclusively in this sliding window
-#   (int) n_labels, the number of your labels, only being used if raw_label_flag=False. 
+#   (int) n_labels, the number of your labels, only being used if raw_label_flag=False.
 #       In previous work, I process the labels manually in this function. You should rewrite
 #       this part if necessary.
 #   (bool) permu_flag, indicate permutation or not. For real training process, this group_flag
@@ -112,7 +113,7 @@ def csv_reformat(X_input=None, y_input=None, filename=filename, raw_label_flag=F
                     if y__[i] >= 11:
                         y__[i] = 11
                     y_s[i, y__[i]] = 1
-            
+
             # 1 label for regresssion
             elif n_labels == 1:
                 y__ = y_tmp[n_seq:].astype(float)
