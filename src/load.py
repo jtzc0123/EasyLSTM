@@ -21,6 +21,7 @@ filename = '../data/useful/pitt_intersection_speed'
 #   (tuple) (X, y),
 #       X - (n_sample x n_dimension) array,
 #       y - (n_sample x 1) array, raw label information
+#
 def csv_read(filename=filename):
 
     print 'Loading raw data from %s..' % filename
