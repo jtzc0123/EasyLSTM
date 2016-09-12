@@ -2,7 +2,7 @@
 An ***LSTM Library*** build on Keras and Tensorflow for Adepter Use of Sequential Sensor Data
 
 ## Goal
->Why is it people think deep learning as something grandious and being frightened to try something **simple and beautiful**?
+>Why is it people think deep learning as something grandiose and being frightened to try something **simple and beautiful**?
 
 ## Preliminaries
 Tested on OS X EI Capitan 10.11.5:
@@ -17,7 +17,7 @@ Tested on OS X EI Capitan 10.11.5:
 
 ## How to use
 ### File Structure
-It would be much easier if the file structure is specified. So, in this lib, I would like to suggest anyone may concern use the same orgnization form as I do, which is (`*`marked options):
+It would be much easier if the file structure is specified. So, in this lib, I would like to suggest anyone may concern use the same organization form as I do, which is (`*`marked options):
 ```
 EasyLSTM
 ├── LICENSE.md
@@ -46,12 +46,12 @@ EasyLSTM
 3. rewrite the `load.py` if necessary for your own need.
 9. `$ python runner.py filename savename n_seq n_labels n_dimension n_hidden dropout epochs tb_on autosave`
 10. have a cup of coffee and wait for the training process.
-11. testing thread starts once training finished, all in the `test.py` with ROC_curve, confusion_matrixm, tons of scores and so on.
+11. testing thread starts once training finished, all in the `test.py` with ROC_curve, confusion_matrix, tons of scores and so on.
 
 ### Quick Example
 In `data/useful`, a dummy dataset has been placed for you to do a quick example. It's a small fraction of my previous work about understanding driver's behaviour in Pittsburgh's intersections.
 
-Using `runner.py`, you can simply start your first demo using *EasyLSTM*. you can call externally from terminal, passing args to `sys` for calling `train_initial()` function.
+Using `runner.py`, you can simply start your first demo using *EasyLSTM*. You can call externally from terminal, passing args to `sys` for calling `train_initial()` function.
 ```
 ######################################################################
 # Train the initial data, then test it with multiple evaluators.
@@ -232,7 +232,7 @@ def run_network(savename, model=None, data=None, epochs=100, \
 
 ## Contact
 Any questions & suggestions are welcomed. Also, you are encouraged to folk this repo to build your own tool kit.
-[Emails](<mailto:cullengao@gmail.com>) and wechats (sc_candi) are the quickest ways to get response.
+[Emails](<mailto:cullengao@gmail.com>) and Wechats (sc_candi) are the quickest ways to get response.
 
 Salute,
 
