@@ -52,7 +52,7 @@ EasyLSTM
 In `data/useful`, a dummy dataset has been placed for you to do a quick example. It's a small fraction of my previous work about understanding driver's behaviour in Pittsburgh's intersections.
 
 Using `runner.py`, you can simply start your first demo using *EasyLSTM*. You can call externally from terminal, passing args to `sys` for calling `train_initial()` function.
-```
+```python
 ######################################################################
 # Train the initial data, then test it with multiple evaluators.
 # --------------------------------------------------------------------
@@ -77,7 +77,7 @@ def train_initial(filename, savename, n_seq, n_labels, n_dimension,
                   n_hidden, dropout, epochs, tb_on, autosave)
 ```
 
-```
+```bash
 $ cd src/
 $ python runner.py '../data/useful/pitt_intersection_speed.csv' 'speed_5_12_24' 5 12 24 '64 16 16' 0.3 100 False False
 ```
@@ -109,7 +109,7 @@ For now, there are two parts of library that has been left out for simple extens
 These few functions may be useful if you know the meaning of args: 
 
 + *load*.**csv_reformat()**
-```
+```python
 ######################################################################
 # Reformat data from .csv format file.
 # -------------------------------------------------------------------
@@ -140,7 +140,7 @@ def csv_reformat(X_input=None, y_input=None, filename=filename, raw_label_flag=F
     n_seq=5, n_labels=12, permu_flag=True, use_y_flag=True)
 ```
 + *pretraining*.**divide_save()**
-```
+```python
 ######################################################################
 # Divide and save training and testing set
 # -------------------------------------------------------------------
@@ -182,7 +182,7 @@ def divide_save(filename, savename, raw_label_flag=False, permu_flag=True, pca_f
     n_components=8, portion=0.8, usage_ratio=1, n_seq=12, n_labels=5)
 ```
 + *lstm*.**build_model()**
-```
+```python
 ######################################################################
 # Build model topology and compile.
 # --------------------------------------------------------------------
@@ -201,7 +201,7 @@ def build_model(use_y_flag=True, n_dimension=24, n_labels=12, n_seq=5,
     n_hidden=[256, 64], dropout=0.3)
 ```
 + *lstm*.**build_model()**
-```
+```python
 ######################################################################
 # Start the training process.
 # --------------------------------------------------------------------
