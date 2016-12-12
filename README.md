@@ -1,5 +1,5 @@
 # EasyLSTM
-An ***LSTM Library*** build on Keras and Tensorflow for Adepter Use of Sequential Sensor Data
+An ***LSTM Library*** built on Keras and Tensorflow for Adepter Use of Sequential Sensor Data
 
 ## Goal
 >Why is it people think deep learning as something grandiose and being frightened to try something **simple and beautiful**?
